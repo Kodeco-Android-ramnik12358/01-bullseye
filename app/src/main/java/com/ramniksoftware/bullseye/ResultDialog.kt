@@ -11,9 +11,11 @@ import androidx.compose.ui.Modifier
 @Composable
 fun ResultDialog(
     hideDialog: () -> Unit,
+    sliderValue: Int,
     modifier: Modifier = Modifier
 ) {
     AlertDialog(
+        modifier = modifier,
         onDismissRequest = {
             hideDialog()
         },
@@ -27,6 +29,6 @@ fun ResultDialog(
             }
         },
         title = {Text(stringResource(R.string.result_dialog_title))},
-        text = { Text(stringResource(R.string.result_dialog_message))}
+        text = { Text(stringResource(R.string.result_dialog_message, sliderValue))}
     )
 }
