@@ -1,4 +1,4 @@
-package com.ramniksoftware.bullseye
+package com.ramniksoftware.bullseye.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -18,6 +18,10 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Devices.AUTOMOTIVE_1024p
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.ramniksoftware.bullseye.R
+import com.ramniksoftware.bullseye.components.GamePrompt
+import com.ramniksoftware.bullseye.components.ResultDialog
+import com.ramniksoftware.bullseye.components.TargetSlider
 import com.ramniksoftware.bullseye.ui.theme.BullseyeTheme
 import kotlin.math.max
 import kotlin.math.min

@@ -1,4 +1,4 @@
-package com.ramniksoftware.bullseye
+package com.ramniksoftware.bullseye.components
 
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Text
@@ -7,6 +7,7 @@ import androidx.compose.ui.res.stringResource
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import com.ramniksoftware.bullseye.R
 
 @Composable
 fun ResultDialog(

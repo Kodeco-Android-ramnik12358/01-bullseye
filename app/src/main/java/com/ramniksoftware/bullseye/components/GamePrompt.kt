@@ -1,4 +1,4 @@
-package com.ramniksoftware.bullseye
+package com.ramniksoftware.bullseye.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -11,6 +11,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.ramniksoftware.bullseye.R
 
 @Composable
 fun GamePrompt(targetValue: Int, modifier: Modifier = Modifier) {

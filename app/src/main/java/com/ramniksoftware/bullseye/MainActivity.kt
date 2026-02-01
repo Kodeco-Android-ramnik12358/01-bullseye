@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import com.ramniksoftware.bullseye.screens.GameScreen
 import com.ramniksoftware.bullseye.ui.theme.BullseyeTheme
 
 class MainActivity : ComponentActivity() {
