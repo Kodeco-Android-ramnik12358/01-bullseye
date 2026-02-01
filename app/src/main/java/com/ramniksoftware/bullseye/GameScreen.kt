@@ -18,6 +18,8 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.ramniksoftware.bullseye.ui.theme.BullseyeTheme
+import kotlin.math.max
+import kotlin.math.min
 import kotlin.random.Random
 
 @Composable
@@ -29,7 +31,7 @@ fun GameScreen() {
     val sliderInt = (sliderValue * 100).toInt()
 
     fun pointsForCurrentRound(): Int {
-        return 999
+        return max(sliderInt, targetValue) - min(sliderInt, targetValue)
     }
 
     Column(
