@@ -11,6 +11,7 @@ import com.ramniksoftware.bullseye.R
 
 @Composable
 fun ResultDialog(
+    dialogTitleStringResource: Int,
     hideDialog: () -> Unit,
     onRoundIncrement: () -> Unit,
     sliderValue: Int,
@@ -33,7 +34,7 @@ fun ResultDialog(
                 Text(stringResource(R.string.result_dialog_button_text))
             }
         },
-        title = {Text(stringResource(R.string.result_dialog_title))},
+        title = {Text(stringResource(dialogTitleStringResource))},
         text = { Text(stringResource(R.string.result_dialog_message, sliderValue, points))}
     )
 }
