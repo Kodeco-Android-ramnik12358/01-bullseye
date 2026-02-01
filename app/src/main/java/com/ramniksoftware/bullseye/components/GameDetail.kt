@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.dp
 import com.ramniksoftware.bullseye.R
 
 @Composable
-fun GameDetail(modifier: Modifier = Modifier) {
+fun GameDetail(totalScore: Int, modifier: Modifier = Modifier) {
     Row(verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceEvenly,
         modifier = modifier
@@ -23,7 +23,7 @@ fun GameDetail(modifier: Modifier = Modifier) {
         Button(onClick = {}) {
             Text(text = stringResource(R.string.start_over))
         }
-        GameInfo(label = stringResource(R.string.score_label), value = 0)
+        GameInfo(label = stringResource(R.string.score_label), value = totalScore)
         GameInfo(label = stringResource(R.string.current_round_label), value = 1)
         Button(onClick = {}) {
             Text(text = stringResource(R.string.info))
@@ -45,5 +45,5 @@ fun GameInfo(label: String, modifier: Modifier = Modifier, value: Int = 0) {
 @Preview(showBackground = true)
 @Composable
 private fun GameDetailPreview() {
-    GameDetail()
+    GameDetail(totalScore = 0)
 }
